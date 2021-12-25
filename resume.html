@@ -4,12 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="./Assets/pretty-heroic@1920x1080px.png">
 </head>
 <body>
-    
+    <nav>
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-between h-24">
 
-// make resume as pdf
+                <div class="md:flex items-center space-x-4">
+                    <!-- logo -->
+                    <div>
+                        <a href="index.html" class="flex items-center py-5 px-2">
+                            <!--             any logo -->
+                            <span
+                                class="font-bold text-white text-2xl hover:text-blue-600 transition duration-300">Milind
+                                Goel</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- nav -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="works.html"
+                        class="py-5 px-3 text-xl text-white hover:text-blue-600 transition duration-300">Works</a>
+                    <a href="skills.html"
+                        class="py-5 px-3 text-xl text-white hover:text-blue-600 transition duration-300">Skills</a>
+                    <a href="contact.html"
+                        class="py-5 px-3 text-xl text-white hover:text-blue-600 transition duration-300">Contact</a>
+                    <a href="resume.html"
+                        class="py-2 px-3 text-xl text-blue-600 hover:bg-blue-600 hover:text-white rounded transition duration-300">Resume</a>
+                </div>
+
+                <!-- mobile button goes here -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="mobile-menu hidden md:hidden">
+            
+                <a href="#" class="block py-2 px-4 text-sm text-white">Home</a>
+                <a href="#" class="block py-2 px-4 text-sm text-white">Works</a>
+                <a href="#" class="block py-2 px-4 text-sm text-white">Skills</a>
+                <a href="#" class="block py-2 px-4 text-sm text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="py-32 text-center" style="height: 100vh;">
+        <h2 class="font-extrabold text-5xl text-white">Coming Soon!</h2>
+        
+
+        <p class="text-slate-300 footer my-96">Made with <span class="text-blue-600">❤</span> by <span class="text-blue-600">Milind Goel</span> </p>
+    </div>
 
 
 
