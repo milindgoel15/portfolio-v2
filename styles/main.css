@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0e73e6;
+  border-radius: 8px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0e73e6c5;
+  border-radius: 8px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #0e73e6 #00000000;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Product Sans;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  background: url("../assets/pretty-heroic@1920x1080px.png") 0;
+  background-repeat: repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container .mainContent .footer {
+  margin-top: 10rem;
+}
+
+.indexContainer {
+  height: 110vh;
+}
+
+.workContainer {
+  height: 185vh;
+}
+
+.workContainer .grid .worksGrid {
+  margin-top: 5rem;
+  width: 30rem;
+  height: 16rem;
+  text-align: left;
+  position: relative;
+  top: 0px;
+}
+
+.workContainer .grid .worksGrid:hover {
+  top: -4px;
+  -webkit-transition: 0.35s all ease-in-out 0s;
+  transition: 0.35s all ease-in-out 0s;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
+}
+
+.workContainer .footer {
+  margin-top: 3rem;
+}
+
+.skillsContainer {
+  height: 160vh;
+}
+
+.skillsContainer .grid .skillsGrid {
+  margin-top: 3rem;
+  width: 23rem;
+  height: 14rem;
+  text-align: left;
+}
+
+.skillsContainer .grid .skillsGrid:hover {
+  -webkit-transition: 0.35s all ease-in-out 0s;
+  transition: 0.35s all ease-in-out 0s;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
+}
+
+.skillsContainer .grid .skillsGrid .progress {
+  width: 100%;
+  max-width: 185px;
+  height: 6px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.skillsContainer .grid .skillsGrid .progress .progress-bar {
+  display: block;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffd33d), color-stop(17%, #ea4aaa), color-stop(34%, #b34bff), color-stop(51%, #01feff), color-stop(68%, #ffd33d), color-stop(85%, #ea4aaa), to(#b34bff));
+  background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+  background-size: 300% 100%;
+}
+
+.skillsContainer .footer {
+  margin-top: 6rem;
+}
+/*# sourceMappingURL=main.css.map */

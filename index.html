@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milind Goel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="./Assets/pretty-heroic@1920x1080px.png">
+</head>
+
+<body>
+    <div class="container indexContainer">
+
+        <!-- navbar goes here -->
+        <nav>
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="flex justify-between h-24">
+
+                    <div class="md:flex items-center space-x-4">
+                        <!-- logo -->
+                        <div>
+                            <a href="index.html" class="flex items-center py-5 px-2">
+                                <!--             any logo -->
+                                <span
+                                    class="font-bold text-white text-2xl hover:text-blue-600 transition duration-300">Milind
+                                    Goel</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- nav -->
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a href="works.html"
+                            class="py-5 px-3 text-xl text-white hover:text-blue-600 transition duration-300">Works</a>
+                        <a href="skills.html"
+                            class="py-5 px-3 text-xl text-white hover:text-blue-600 transition duration-300">Skills</a>
+                        <a href="contact.html"
+                            class="py-5 px-3 text-xl text-white hover:text-blue-600 transition duration-300">Contact</a>
+                        <a href="resume.html"
+                            class="py-2 px-3 text-xl text-blue-600 hover:bg-blue-600 hover:text-white rounded transition duration-300">Resume</a>
+                    </div>
+
+                    <!-- mobile button goes here -->
+                    <div class="md:hidden flex items-center">
+                        <button class="mobile-menu-button">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="mobile-menu hidden md:hidden">
+                <a href="index.html" class="block py-2 px-4 text-sm flex"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 mr-2" fill="none" width="25px" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    <span class="font-bold">Better Dev</span>
+                    <!--         h-6 w-6 mr-1 -->
+                </a>
+                <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">About</a>
+                <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Pricing</a>
+                <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
+            </div>
+        </nav>
+        <!-- content goes here -->
+        <div class="py-32 text-center mainContent">
+            <h2 class="font-extrabold text-8xl text-white">Hi! I'm Milind Goel</h2>
+            <p class="text-xl text-white text-2xl py-8">a Web Developer, UI/UX Designer based in India</p>
+
+            <a href="http://github.com/milindgoel15" target="blank">
+                <button
+                    class="text-xl py-7 my-10 px-10 rounded-full bg-white hover:bg-gray-200 button transition duration-300">
+                    <p class="text-blue-600 transition duration-300">CONNECT WITH ME</p>
+                </button>
+
+            </a>
+
+            <p class="text-slate-300 footer">Made with <span class="text-blue-600">❤</span> by <span class="text-blue-600">Milind Goel</span> </p>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+    <script src="snowflakes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+</body>
+
+</html>
