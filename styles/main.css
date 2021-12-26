@@ -5,6 +5,10 @@
   src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2");
 }
 
+:root {
+  --background-color: radial-gradient(100% 225% at 100% 0%, #FF0000 0%, #000000 100%), linear-gradient(236deg, #00C2FF 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 0%, #CDFFEB 36%, #009F9D 36%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -28,7 +32,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0e73e6c5;
+  background: #1361b9;
   border-radius: 8px;
   border: 4px solid transparent;
   background-clip: content-box;
@@ -36,7 +40,7 @@
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: #0e73e6 #00000000;
+  scrollbar-color: #0e73e6 #2f2e41;
 }
 
 html, body {
@@ -49,7 +53,8 @@ body {
   font-family: Product Sans;
   scroll-behavior: smooth;
   overflow-y: hidden;
-  background: url("/Assets/pretty-heroic@1920x1080px.png") 0;
+  background: var(--background-color);
+  background-blend-mode: overlay, hard-light, normal;
   background-repeat: repeat;
 }
 
