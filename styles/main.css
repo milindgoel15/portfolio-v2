@@ -134,4 +134,29 @@ a {
 .skillsContainer .footer {
   margin-top: 6rem;
 }
+
+.contactContainer {
+  height: 132vh;
+}
+
+.contactContainer .grid .contactsGrid {
+  margin-top: 5rem;
+  width: 30rem;
+  height: 10rem;
+  text-align: left;
+  position: relative;
+  top: 0px;
+}
+
+.contactContainer .grid .contactsGrid:hover {
+  top: -4px;
+  -webkit-transition: 0.35s all ease-in-out 0s;
+  transition: 0.35s all ease-in-out 0s;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
+}
+
+.contactContainer .footer {
+  margin-top: 6rem;
+}
 /*# sourceMappingURL=main.css.map */

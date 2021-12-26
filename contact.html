@@ -8,6 +8,7 @@
     <title>Connect with me</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
@@ -33,65 +34,132 @@
 </head>
 
 <body>
-    <nav>
-        <div class="max-w-7xl mx-auto px-8">
-            <div class="flex justify-between h-24">
+    <div class="container contactContainer">
 
-                <div class="md:flex items-center space-x-4">
-                    <!-- logo -->
-                    <div>
-                        <a href="index" class="flex items-center py-5 px-2">
-                            <!--             any logo -->
-                            <span
-                                class="font-bold text-white text-2xl hover:text-blue-600 transition duration-300">Milind
-                                Goel</span>
-                        </a>
+        <nav>
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="flex justify-between h-24">
+
+                    <div class="md:flex items-center space-x-4">
+                        <!-- logo -->
+                        <div>
+                            <a href="index" class="flex items-center py-5 px-2">
+                                <!--             any logo -->
+                                <span
+                                    class="font-bold text-white text-2xl hover:text-blue-600 transition duration-300">Milind
+                                    Goel</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
 
-                <!-- nav -->
-                <div class="hidden md:flex items-center space-x-4">
-                    <a href="works"
-                        class="py-5 px-3 text-xl text-white hover:text-blue-600 transition duration-300">Works</a>
-                    <a href="skills"
-                        class="py-5 px-3 text-xl text-white hover:text-blue-600 transition duration-300">Skills</a>
-                    <a href="contact"
-                        class="py-5 px-3 text-xl text-white hover:text-blue-600 transition duration-300">Contact</a>
-                    <a href="resume"
-                        class="py-2 px-3 text-xl text-blue-600 hover:bg-blue-600 hover:text-white rounded transition duration-300">Resume</a>
-                </div>
+                    <!-- nav -->
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a href="works"
+                            class="py-5 px-3 text-xl text-white hover:text-blue-600 transition duration-300">Works</a>
+                        <a href="skills"
+                            class="py-5 px-3 text-xl text-white hover:text-blue-600 transition duration-300">Skills</a>
+                        <a href="contact"
+                            class="py-5 px-3 text-xl text-white hover:text-blue-600 transition duration-300">Contact</a>
+                        <a href="resume"
+                            class="py-2 px-3 text-xl text-blue-600 hover:bg-blue-600 hover:text-white rounded transition duration-300">Resume</a>
+                    </div>
 
-                <!-- mobile button goes here -->
-                <div class="md:hidden flex items-center">
-                    <button class="mobile-menu-button">
-                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
+                    <!-- mobile button goes here -->
+                    <div class="md:hidden flex items-center">
+                        <button class="mobile-menu-button">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
 
+                </div>
             </div>
-        </div>
 
-        <!-- mobile menu -->
-        <div class="mobile-menu hidden md:hidden">
+            <!-- mobile menu -->
             <div class="mobile-menu hidden md:hidden">
-            
-                <a href="#" class="block py-2 px-4 text-sm text-white">Home</a>
-                <a href="#" class="block py-2 px-4 text-sm text-white">Works</a>
-                <a href="#" class="block py-2 px-4 text-sm text-white">Skills</a>
-                <a href="#" class="block py-2 px-4 text-sm text-white">Contact</a>
+                <div class="mobile-menu hidden md:hidden">
+
+                    <a href="#" class="block py-2 px-4 text-sm text-white">Home</a>
+                    <a href="#" class="block py-2 px-4 text-sm text-white">Works</a>
+                    <a href="#" class="block py-2 px-4 text-sm text-white">Skills</a>
+                    <a href="#" class="block py-2 px-4 text-sm text-white">Contact</a>
+                </div>
             </div>
+        </nav>
+
+        <div class="py-32 text-center">
+            <h2 class="font-extrabold text-4xl text-white">Connect with me</h2>
+
+            <div class="flex justify-center">
+
+                <div class="grid grid-col-2 grid-rows-2 grid-flow-col gap-10">
+                    <a href="http://linkedin.com/in/milindgoel15" target="blank">
+
+                        <div class="contactsGrid p-8 flex items-center bg-blue-600 border-transparent rounded-md shadow-md space-y-2">
+
+                            <i class="bi bi-linkedin px-3" style="font-size: 3.2rem; color: white"></i>
+
+                            <div class="flex flex-col px-9">
+                                <h2 class="text-2xl py-1 text-white font-semibold leading-6">LinkedIn</h2>
+                                <p class="text-lg text-slate-200">@milindgoel15</p>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="mailto:milindgoel15@gmail.com" target="blank">
+
+                        <div class="contactsGrid p-8 flex items-center bg-blue-600 border-transparent rounded-md shadow-md space-y-2">
+
+                            <i class="bi bi-envelope-fill px-3" style="font-size: 3.2rem; color: white"></i>
+
+                            <div class="flex flex-col px-9">
+                                <h2 class="text-2xl py-1 text-white font-semibold leading-6">Email</h2>
+                                <p class="text-lg text-slate-200">milindgoel15@gmail.com</p>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="http://github.com/milindgoel15" target="blank">
+
+                        <div class="contactsGrid p-8 flex items-center bg-blue-600 border-transparent rounded-md shadow-md space-y-2">
+
+                            <i class="bi bi-github px-3" style="font-size: 3.2rem; color: white"></i>
+
+                            <div class="flex flex-col px-9">
+                                <h2 class="text-2xl py-1 text-white font-semibold leading-6">GitHub</h2>
+                                <p class="text-lg text-slate-200">@milindgoel15</p>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="http://telegram.me/milindgoel15" target="blank">
+
+                        <div class="contactsGrid p-8 flex items-center bg-blue-500 border-transparent rounded-md shadow-md space-y-2">
+
+                            <i class="bi bi-telegram px-3" style="font-size: 3.2rem; color: white;"></i>
+
+                            <div class="flex flex-col px-9">
+                                <h2 class="text-2xl py-1 text-white font-semibold leading-6">Telegram</h2>
+                                <p class="text-lg text-slate-200">@milindgoel15</p>
+
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <p class="text-slate-300 footer">Made with <span class="text-blue-600">❤</span> by <span
+                    class="text-blue-600">Milind Goel</span> </p>
+
         </div>
-    </nav>
-
-    <div class="py-32 text-center" style="height: 100vh;">
-        <h2 class="font-extrabold text-5xl text-white">Coming Soon!</h2>
-        
-
-        <p class="text-slate-300 footer my-96">Made with <span class="text-blue-600">❤</span> by <span class="text-blue-600">Milind Goel</span> </p>
     </div>
 
     <script src="main.js"></script>
