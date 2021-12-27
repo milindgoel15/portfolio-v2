@@ -76,11 +76,13 @@ a {
 
 .workContainer .grid .worksGrid {
   margin-top: 5rem;
-  width: 30rem;
-  height: 16rem;
+  width: 32rem;
+  height: 15rem;
   text-align: left;
   position: relative;
   top: 0px;
+  -webkit-transition: 0.35s all ease-in-out 0s;
+  transition: 0.35s all ease-in-out 0s;
 }
 
 .workContainer .grid .worksGrid:hover {
@@ -104,6 +106,8 @@ a {
   width: 23rem;
   height: 14rem;
   text-align: left;
+  -webkit-transition: 0.35s all ease-in-out 0s;
+  transition: 0.35s all ease-in-out 0s;
 }
 
 .skillsContainer .grid .skillsGrid:hover {
@@ -166,6 +170,8 @@ a {
   text-align: left;
   position: relative;
   top: 0px;
+  -webkit-transition: 0.35s all ease-in-out 0s;
+  transition: 0.35s all ease-in-out 0s;
 }
 
 .contactContainer .grid .contactsGrid:hover {

@@ -90,11 +90,12 @@ a {
     .grid {
         .worksGrid {
             margin-top: 5rem;
-            width: 30rem;
-            height: 16rem;
+            width: 32rem;
+            height: 15rem;
             text-align: left;
             position: relative;
             top: 0px;
+            transition: 0.35s all ease-in-out 0s;
 
             &:hover {
                 top: -4px;
@@ -118,6 +119,7 @@ a {
             width: 23rem;
             height: 14rem;
             text-align: left;
+            transition: 0.35s all ease-in-out 0s;
 
             &:hover {
                 transition: 0.35s all ease-in-out 0s;
@@ -169,6 +171,7 @@ a {
             text-align: left;
             position: relative;
             top: 0px;
+            transition: 0.35s all ease-in-out 0s;
 
             &:hover {
                 top: -4px;
