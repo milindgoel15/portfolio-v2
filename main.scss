@@ -135,20 +135,13 @@ a {
             }
         }
     }
-
-    .footer {
-        margin-top: 6rem;
-    }
 }
 
 .contactContainer {
-    height: 132vh;
+    // height: 132vh;
 
     .grid {
         .contactsGrid {
-            margin-top: 5rem;
-            width: 30rem;
-            height: 10rem;
             text-align: left;
             position: relative;
             top: 0px;
@@ -160,9 +153,5 @@ a {
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
             }
         }
-    }
-
-    .footer {
-        margin-top: 6rem;
     }
 }
