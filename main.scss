@@ -6,7 +6,7 @@
 }
 
 :root {
-    --background-color: radial-gradient(100% 225% at 100% 0%, #FF0000 0%, #000000 100%), linear-gradient(236deg, #00C2FF 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 0%, #CDFFEB 36%, #009F9D 36%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%); 
+    --background-color: radial-gradient(100% 225% at 100% 0%, #FF0000 0%, #000000 100%), linear-gradient(236deg, #00C2FF 0%, #000000 100%), linear-gradient(135deg, #2fa3f0 0%, #2e94d8 36%, #1574b4 36%, rgb(15, 125, 199) 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
 }
 
 // ========== INDEX PAGE ================
@@ -92,7 +92,7 @@ a {
 }
 
 .skillsContainer {
-    height: 160vh;
+    // height: 160vh;
 
     .grid {
         .skillsGrid {
