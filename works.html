@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
-    
+
     <!-- favicons -->
     <link rel="icon" type="image/png" sizes="512x512" href="favicons/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png">
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div class="container workContainer">
+    <div class="container workContainer h-min">
         <!-- navbar goes here -->
         <nav>
             <div class="max-w-7xl mx-auto px-8">
@@ -30,10 +30,10 @@
                     <div class="md:flex items-center space-x-4">
                         <!-- logo -->
                         <div>
-                            <a href="index" class="flex items-center py-5 px-2">
+                            <a href="index" class="flex items-center py-8 lg:py-5 px-2">
                                 <!--             any logo -->
                                 <span
-                                    class="font-bold text-white text-2xl hover:text-blue-600 transition duration-300">Milind
+                                    class="font-bold text-black sm:text-white text-2xl hover:text-blue-600 transition duration-300">Milind
                                     Goel</span>
                             </a>
                         </div>
@@ -48,7 +48,8 @@
                         <a href="contact"
                             class="py-2 px-3 text-xl text-white hover:bg-blue-600 hover:text-white rounded transition duration-300">Contact</a>
                         <a href="CV.pdf"
-                            class="py-2 px-3 text-xl text-white hover:bg-blue-600 hover:text-white rounded transition duration-300" target="_blank">Resume</a>
+                            class="py-2 px-3 text-xl text-white hover:bg-blue-600 hover:text-white rounded transition duration-300"
+                            target="_blank">Resume</a>
                     </div>
 
                     <!-- mobile button goes here -->
@@ -68,24 +69,25 @@
             <!-- mobile menu -->
             <div class="mobile-menu hidden md:hidden">
 
-                <a href="index" class="block py-2 px-4 text-sm text-white">Home</a>
-                <a href="works" class="block py-2 px-4 text-sm text-white">Works</a>
-                <a href="skills" class="block py-2 px-4 text-sm text-white">Skills</a>
-                <a href="contact" class="block py-2 px-4 text-sm text-white">Contact</a>
+                <a href="index" class="block py-2 px-10 text-lg text-black md:text-white">Home</a>
+                <a href="works" class="block py-2 px-10 text-lg text-black md:text-white">Works</a>
+                <a href="skills" class="block py-2 px-10 text-lg text-black md:text-white">Skills</a>
+                <a href="contact" class="block py-2 px-10 text-lg text-black md:text-white">Contact</a>
+                <a href="CV.pdf" class="block py-2 px-10 text-lg text-black md:text-white" target="_blank">Resume</a>
             </div>
         </nav>
 
         <!-- content goes here -->
         <div class="py-32 text-center">
-            <h2 class="font-extrabold text-4xl text-white">Recents Works & Contributions</h2>
+            <h2 class="font-extrabold text-2xl py-5 text-black md:text-white md:text-4xl">Recents Works & Contributions</h2>
 
             <div class="flex justify-center min-h-screen">
 
-                <div class="grid grid-col-2 grid-rows-2 grid-flow-col gap-5">
+                <div class="grid grid-rows-4 gap-2 lg:grid-col-2 lg:grid-rows-2 lg:grid-flow-col lg:gap-5">
                     <a href="http://abhishekgoelandassociates.com" target="blank">
 
                         <div
-                            class="worksGrid p-8 bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2">
+                            class="worksGrid p-8 bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2 mt-5 ml-4 h-64 w-11/12 sm:ml-0 sm:mt-20 sm:w-[32rem]">
 
                             <h2 class="text-2xl py-5 text-white font-semibold leading-6">Abhishek Goel & Associates</h2>
                             <p class="text-lg text-slate-200">Website for Chartered Accountant firm</p>
@@ -97,17 +99,18 @@
                     <a href="https://github.com/RetroMusicPlayer" target="blank">
 
                         <div
-                            class="worksGrid p-8 bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2 items-start">
+                            class="worksGrid p-8 bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2 mt-5 ml-4 h-64 w-11/12 sm:ml-0 sm:mt-20 sm:w-[32rem]">
 
                             <h2 class="text-2xl py-5 text-white font-semibold leading-6">Retro Music Player</h2>
-                            <p class="text-lg text-slate-200">Member and contributor of Retro Music Player, a material design, offline music player for Android.</p>
+                            <p class="text-lg text-slate-200">Member and contributor of Retro Music Player, a material
+                                design, offline music player for Android.</p>
                         </div>
 
                     </a>
 
                     <a href="http://mwsretail.in" target="blank">
                         <div
-                            class="worksGrid p-8 bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2 items-start">
+                            class="worksGrid p-8 bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2 mt-5 ml-4 h-64 w-11/12 sm:ml-0 sm:mt-20 sm:w-[32rem]">
 
                             <h2 class="text-2xl py-5 text-white font-semibold leading-6">Milind Webcomm Services</h2>
                             <p class="text-lg text-slate-200">Website for Web Designing and E-Commerce operators</p>
@@ -117,12 +120,12 @@
 
                     </a>
 
-                    
+
 
                     <a href="https://github.com/milindgoel15/milindgoel15.github.io" target="blank">
 
                         <div
-                            class="worksGrid p-8 bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2 items-start">
+                            class="worksGrid p-8 bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2 mt-5 ml-4 h-64 w-11/12 sm:ml-0 sm:mt-20 sm:w-[32rem]">
 
                             <h2 class="text-2xl py-5 text-white font-semibold leading-6">Personal Portfolio</h2>
                             <p class="text-lg text-slate-200">Designed personal Portfolio website for myself</p>
@@ -144,7 +147,7 @@
                     Contributions</a>
             </button>
 
-            <p class="text-slate-300 footer">Made with <span class="text-blue-600">❤</span> by <span
+            <p class="text-slate-300 footer mt-12">Made with <span class="text-blue-600">❤</span> by <span
                     class="text-blue-600">Milind Goel</span> </p>
 
         </div>

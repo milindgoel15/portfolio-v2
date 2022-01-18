@@ -72,26 +72,11 @@ a {
     text-decoration: none;
 }
 
-
-.container .mainContent {
-
-    .footer {
-        margin-top: 10rem;
-    }
-}
-
-.indexContainer {
-    height: 110vh;
-}
-
 .workContainer {
-    height: 185vh;
+    // height: 185vh;
 
     .grid {
         .worksGrid {
-            margin-top: 5rem;
-            width: 32rem;
-            height: 15rem;
             text-align: left;
             position: relative;
             top: 0px;
@@ -103,10 +88,6 @@ a {
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
             }
         }
-    }
-
-    .footer {
-        margin-top: 3rem;
     }
 }
 
