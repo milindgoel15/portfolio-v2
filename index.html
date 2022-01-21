@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milind Goel</title>
     <link rel="stylesheet" href="styles/main.css">
+
+    <!-- stylesheets -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
 
@@ -20,7 +22,7 @@
 
 </head>
 
-<body>
+<body data-barba="wrapper">
     <div class="container indexContainer h-min">
 
         <!-- navbar goes here -->
@@ -76,8 +78,9 @@
                 <a href="CV.pdf" class="block py-2 px-10 text-lg text-white" target="_blank">Resume</a>
             </div>
         </nav>
+
         <!-- content goes here -->
-        <div class="py-32 text-center mainContent">
+        <div class="py-32 text-center mainContent" data-barba="container" data-barba-namespace="home">
             <h2 class="font-extrabold text-6xl py-5 lg:text-8xl text-white md:text-6xl">Hi! I'm Milind Goel</h2>
             <p class="text-xl text-white text-lg py-8 px-3 md:text-2xl">a Web Developer, UI/UX Designer based in India</p>
 

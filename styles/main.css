@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Product Sans';
+  font-family: 'Raisonne';
   font-style: normal;
   font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format("woff2");
+  src: url(../fonts/raisonne.woff) format("woff");
 }
 
 :root {
-  --background-color: radial-gradient(100% 225% at 100% 0%, #FF0000 0%, #000000 100%), linear-gradient(236deg, #00C2FF 0%, #000000 100%), linear-gradient(135deg, #2fa3f0 0%, #2e94d8 36%, #1574b4 36%, rgb(15, 125, 199) 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+  --dark: #14161a;
 }
 
 * {
@@ -17,11 +17,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: black;
+  width: 16px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -50,10 +46,10 @@ html, body {
 }
 
 body {
-  font-family: Product Sans;
+  font-family: Raisonne;
   scroll-behavior: smooth;
   overflow-y: hidden;
-  background: var(--background-color);
+  background: var(--dark);
   background-blend-mode: overlay, hard-light, normal;
   background-repeat: repeat;
 }
