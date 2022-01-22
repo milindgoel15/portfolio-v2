@@ -6,7 +6,9 @@
 }
 
 :root {
-  --dark: #14161a;
+  --background: #14161a;
+  --accent-color: #0e73e6;
+  --hover-accent-color: #1361b9;
 }
 
 * {
@@ -21,14 +23,14 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0e73e6;
+  background: var(--accent-color);
   border-radius: 8px;
   border: 4px solid transparent;
   background-clip: content-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #1361b9;
+  background: var(--hover-accent-color);
   border-radius: 8px;
   border: 4px solid transparent;
   background-clip: content-box;
@@ -36,7 +38,7 @@
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: #0e73e6 #2f2e41;
+  scrollbar-color: var(--accent-color) var(--background);
 }
 
 html, body {
@@ -49,7 +51,7 @@ body {
   font-family: Raisonne;
   scroll-behavior: smooth;
   overflow-y: hidden;
-  background: var(--dark);
+  background: var(--background);
   background-blend-mode: overlay, hard-light, normal;
   background-repeat: repeat;
 }
@@ -58,56 +60,25 @@ a {
   text-decoration: none;
 }
 
-.workContainer .grid .worksGrid {
-  text-align: left;
+.loading-screen {
   position: relative;
-  top: 0px;
-  -webkit-transition: 0.35s all ease-in-out 0s;
-  transition: 0.35s all ease-in-out 0s;
-}
-
-.workContainer .grid .worksGrid:hover {
-  top: -4px;
-  -webkit-transition: 0.35s all ease-in-out 0s;
-  transition: 0.35s all ease-in-out 0s;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
-}
-
-.skillsContainer .grid .skillsGrid {
-  margin-top: 3rem;
-  width: 23rem;
-  height: 14rem;
-  text-align: left;
-  -webkit-transition: 0.35s all ease-in-out 0s;
-  transition: 0.35s all ease-in-out 0s;
-}
-
-.skillsContainer .grid .skillsGrid:hover {
-  -webkit-transition: 0.35s all ease-in-out 0s;
-  transition: 0.35s all ease-in-out 0s;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
-}
-
-.skillsContainer .grid .skillsGrid .progress {
-  width: 100%;
-  max-width: 185px;
-  height: 6px;
-  background: #e1e4e8;
-  border-radius: 3px;
-  overflow: hidden;
-  margin-top: 2rem;
-}
-
-.skillsContainer .grid .skillsGrid .progress .progress-bar {
-  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: var(--accent-color);
+  width: 0%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#ffd33d), color-stop(17%, #ea4aaa), color-stop(34%, #b34bff), color-stop(51%, #01feff), color-stop(68%, #ffd33d), color-stop(85%, #ea4aaa), to(#b34bff));
-  background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
-  background-size: 300% 100%;
-  -webkit-animation: progress-animation 2s linear infinite;
-          animation: progress-animation 2s linear infinite;
+}
+
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
 }
 
 @-webkit-keyframes progress-animation {
@@ -126,21 +97,5 @@ a {
   100% {
     background-position: 0;
   }
-}
-
-.contactContainer .grid .contactsGrid {
-  text-align: left;
-  position: relative;
-  top: 0px;
-  -webkit-transition: 0.35s all ease-in-out 0s;
-  transition: 0.35s all ease-in-out 0s;
-}
-
-.contactContainer .grid .contactsGrid:hover {
-  top: -4px;
-  -webkit-transition: 0.35s all ease-in-out 0s;
-  transition: 0.35s all ease-in-out 0s;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
 }
 /*# sourceMappingURL=main.css.map */

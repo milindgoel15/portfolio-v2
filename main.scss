@@ -6,8 +6,9 @@
 }
 
 :root {
-    // --background-color: radial-gradient(100% 225% at 100% 0%, #FF0000 0%, #000000 100%), linear-gradient(236deg, #00C2FF 0%, #000000 100%), linear-gradient(135deg, #2fa3f0 0%, #2e94d8 36%, #1574b4 36%, rgb(15, 125, 199) 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
-    --dark: #14161a;
+    --background: #14161a;
+    --accent-color: #0e73e6;
+    --hover-accent-color: #1361b9;
 }
 
 // ========== INDEX PAGE ================
@@ -21,19 +22,17 @@
 // ============= CUSTOM SCROLL BAR ==============
 
 ::-webkit-scrollbar {
-    width: 16px;
+    width: 16px; // To make hidden scrollbars, just set wdith to 0px.
 }
 
-// To make hidden scrollbars, just set wdith to 0px.
-  
 ::-webkit-scrollbar-thumb {
-    background: #0e73e6;
+    background: var(--accent-color);
     border-radius: 8px;
     border: 4px solid transparent;
     background-clip: content-box;
 
     &:hover {
-        background: #1361b9;
+        background: var(--hover-accent-color);
         border-radius: 8px;
         border: 4px solid transparent;
         background-clip: content-box;
@@ -43,23 +42,23 @@
 // ====== FIREFOX SCROLLBAR ======
 html {
     scrollbar-width: thin;
-    scrollbar-color: #0e73e6 #2f2e41;
+    scrollbar-color: var(--accent-color) var(--background);
 }
 // ====== FIREFOX SCROLLBAR ======
 
 // ============= CUSTOM SCROLL BAR ==============
 
 html,body {
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 body {
     font-family: Raisonne;
     scroll-behavior: smooth;
     overflow-y: hidden;
-    background: var(--dark);
+    background: var(--background);
     background-blend-mode: overlay, hard-light, normal;
     background-repeat: repeat;
 }
@@ -68,86 +67,32 @@ a {
     text-decoration: none;
 }
 
-.workContainer {
-    // height: 185vh;
-
-    .grid {
-        .worksGrid {
-            text-align: left;
-            position: relative;
-            top: 0px;
-            transition: 0.35s all ease-in-out 0s;
-
-            &:hover {
-                top: -4px;
-                transition: 0.35s all ease-in-out 0s;
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
-            }
-        }
-    }
+.loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: var(--accent-color);
+    width: 0%;
+    height: 100%;
 }
 
-.skillsContainer {
-    // height: 160vh;
-
-    .grid {
-        .skillsGrid {
-            margin-top: 3rem;
-            width: 23rem;
-            height: 14rem;
-            text-align: left;
-            transition: 0.35s all ease-in-out 0s;
-
-            &:hover {
-                transition: 0.35s all ease-in-out 0s;
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
-            }
-
-            .progress {
-                width: 100%;
-                max-width: 185px;
-                height: 6px;
-                background: #e1e4e8;
-                border-radius: 3px;
-                overflow: hidden;
-                margin-top: 2rem;
-
-                .progress-bar {
-                    display: block;
-                    height: 100%;
-                    background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
-                    background-size: 300% 100%;
-                    animation: progress-animation 2s linear infinite;
-    
-                    @keyframes progress-animation {
-                        0% {
-                            background-position: 100%;
-                        }
-                        100% {
-                            background-position: 0;
-                        }
-                    }
-                }
-            }
-        }
-    }
+.load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
 }
 
-.contactContainer {
-    // height: 132vh;
-
-    .grid {
-        .contactsGrid {
-            text-align: left;
-            position: relative;
-            top: 0px;
-            transition: 0.35s all ease-in-out 0s;
-
-            &:hover {
-                top: -4px;
-                transition: 0.35s all ease-in-out 0s;
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.315), 0 6px 6px rgba(0, 0, 0, 0.205);
-            }
-        }
+@keyframes progress-animation {
+    0% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0;
     }
 }

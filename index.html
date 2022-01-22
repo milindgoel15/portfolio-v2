@@ -9,8 +9,8 @@
     
     <!-- stylesheets -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
 
     <!-- favicons -->
     <link rel="icon" type="image/png" sizes="512x512" href="favicons/android-chrome-512x512.png">
@@ -23,8 +23,11 @@
 </head>
 
 <body data-barba="wrapper">
-    <div class="container indexContainer h-min">
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
 
+    <div class="container h-min">
         <!-- navbar goes here -->
         <nav>
             <div class="max-w-7xl mx-auto px-8">
@@ -33,7 +36,7 @@
                     <div class="md:flex items-center space-x-4">
                         <!-- logo -->
                         <div>
-                            <a href="index" class="flex items-center py-8 lg:py-5 px-2">
+                            <a href="https://milindgoel15.github.io" class="flex items-center py-8 lg:py-5 px-2">
                                 <!--             any logo -->
                                 <span
                                     class="font-bold text-white text-2xl hover:text-blue-600 transition duration-300">Milind
@@ -71,7 +74,7 @@
             <!-- mobile menu -->
             <div class="mobile-menu hidden md:hidden">
 
-                <a href="index" class="block py-2 px-10 text-lg text-white">Home</a>
+                <a href="https://milindgoel15.github.io" class="block py-2 px-10 text-lg text-white">Home</a>
                 <a href="works" class="block py-2 px-10 text-lg text-white">Works</a>
                 <a href="skills" class="block py-2 px-10 text-lg text-white">Skills</a>
                 <a href="contact" class="block py-2 px-10 text-lg text-white">Contact</a>
@@ -80,7 +83,7 @@
         </nav>
 
         <!-- content goes here -->
-        <div class="py-32 text-center mainContent" data-barba="container" data-barba-namespace="home">
+        <div class="py-32 text-center animate-this" data-barba="container" data-barba-namespace="home">
             <h2 class="font-extrabold text-6xl py-5 lg:text-8xl text-white md:text-6xl">Hi! I'm Milind Goel</h2>
             <p class="text-xl text-white text-lg py-8 px-3 md:text-2xl">a Web Developer, UI/UX Designer based in India</p>
 
@@ -88,7 +91,7 @@
                 <button class="py-6 my-10 px-7 text-xl md:text-lg md:py-5 md:px-7 md:my-8 xl:my-14 xl:px-10 xl:py-7 text-xl rounded-full bg-white button transition duration-200 ease-in-out text-blue-600 hover:text-white hover:bg-blue-700">CONNECT WITH ME</button>
             </a>
 
-            <p class="text-slate-300 footer mt-20">Made with <span class="text-blue-600">❤</span> by <span
+            <p class="text-slate-300 footer mt-20">Made with <span class="text-red-600">❤</span> by <span
                     class="text-blue-600">Milind Goel</span> </p>
         </div>
 
@@ -98,6 +101,11 @@
     <script src="snowflakes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
     <script src="kursor.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!-- load gsap animation library (minified version) -->
+    <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+    <script src="barba.js"></script>
 </body>
 
 </html>

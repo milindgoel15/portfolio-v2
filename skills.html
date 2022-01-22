@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
-    
+
     <!-- stylesheets -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
     <link rel="stylesheet" href="styles/main.css">
-    
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+
     <!-- favicons -->
     <link rel="icon" type="image/png" sizes="512x512" href="favicons/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png">
@@ -22,8 +22,12 @@
 
 </head>
 
-<body>
-    <div class="container skillsContainer h-min">
+<body data-barba="wrapper">
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
+
+    <div class="container h-min">
         <!-- navbar goes here -->
         <nav>
             <div class="max-w-7xl mx-auto px-8">
@@ -32,7 +36,7 @@
                     <div class="md:flex items-center space-x-4">
                         <!-- logo -->
                         <div>
-                            <a href="index" class="flex items-center py-8 lg:py-5 px-2">
+                            <a href="https://milindgoel15.github.io" class="flex items-center py-8 lg:py-5 px-2">
                                 <!--             any logo -->
                                 <span
                                     class="font-bold text-white text-2xl hover:text-blue-600 transition duration-300">Milind
@@ -70,7 +74,7 @@
             <!-- mobile menu -->
             <div class="mobile-menu hidden md:hidden">
 
-                <a href="index" class="block py-2 px-10 text-lg text-white">Home</a>
+                <a href="https://milindgoel15.github.io" class="block py-2 px-10 text-lg text-white">Home</a>
                 <a href="works" class="block py-2 px-10 text-lg text-white">Works</a>
                 <a href="skills" class="block py-2 px-10 text-lg text-white">Skills</a>
                 <a href="contact" class="block py-2 px-10 text-lg text-white">Contact</a>
@@ -79,65 +83,70 @@
         </nav>
 
         <!-- content goes here -->
-        <div class="py-32 text-center">
+        <div class="py-32 text-center" data-barba="container" data-barba-namespace="skills">
             <h2 class="font-extrabold text-4xl py-1 text-white">Skills</h2>
 
             <div class="flex justify-center min-h-screen">
 
                 <div class="grid grid-rows-5 gap-2 lg:grid-col-3 lg:grid-rows-2 lg:grid-flow-col lg:gap-5 lg:ml-20">
 
-                    <div class="skillsGrid p-8 space-y-2">
+                    <div
+                        class="p-8 space-y-2 mt-12 w-96 h-56 text-left transtion-all duration-300 ease-in-out hover:shadow-[0_10px_20px_0_rgba(0,0,0,0.315),0_6px_6px_0_rgba(0,0,0,0.205)]">
 
                         <h2 class="text-2xl py-5 text-white font-semibold leading-6">Web Designing</h2>
                         <p class="text-lg text-slate-200">Prototyping & UI/UX Designing</p>
-                        <div class="progress">
-                            <span class="progress-bar" style="width: 60%"></span>
+                        <div style="margin-top: 2rem;" class="w-full max-w-[185px] h-1.5 bg-slate-200 rounded-[3px] overflow-hidden">
+                            <span class="h-full block bg-[linear-gradient(90deg,#ffd33d,#ea4aaa_17%,#b34bff_34%,#01feff_51%,#ffd33d_68%,#ea4aaa_85%,#b34bff)] bg-[length:300%_100%] animate-[progress-animation_2s_linear_infinite]" style="width: 60%"></span>
                         </div>
                     </div>
 
 
 
-                    <div class="skillsGrid p-8 space-y-2">
+                    <div
+                        class="p-8 space-y-2 mt-12 w-96 h-64 text-left transtion-all duration-300 ease-in-out hover:shadow-[0_10px_20px_0_rgba(0,0,0,0.315),0_6px_6px_0_rgba(0,0,0,0.205)]">
 
                         <h2 class="text-2xl py-5 text-white font-semibold leading-6">Object Oriented Programming</h2>
                         <p class="text-lg text-slate-200">C/C++</p>
-                        <div class="progress">
-                            <span class="progress-bar" style="width: 25%"></span>
+                        <div style="margin-top: 2rem;" class="w-full max-w-[185px] h-1.5 bg-slate-200 rounded-[3px] overflow-hidden">
+                            <span class="h-full block bg-[linear-gradient(90deg,#ffd33d,#ea4aaa_17%,#b34bff_34%,#01feff_51%,#ffd33d_68%,#ea4aaa_85%,#b34bff)] bg-[length:300%_100%] animate-[progress-animation_2s_linear_infinite]" style="width: 25%"></span>
                         </div>
                     </div>
 
-                    <div class="skillsGrid p-8 space-y-2">
+                    <div
+                        class="p-8 space-y-2 mt-12 w-96 h-56 text-left transtion-all duration-300 ease-in-out hover:shadow-[0_10px_20px_0_rgba(0,0,0,0.315),0_6px_6px_0_rgba(0,0,0,0.205)]">
 
                         <h2 class="text-2xl py-5 text-white font-semibold leading-6">Web Development</h2>
                         <p class="text-lg text-slate-200">HTML/CSS/JS</p>
-                        <div class="progress">
-                            <span class="progress-bar" style="width: 70%"></span>
+                        <div style="margin-top: 2rem;" class="w-full max-w-[185px] h-1.5 bg-slate-200 rounded-[3px] overflow-hidden">
+                            <span class="h-full block bg-[linear-gradient(90deg,#ffd33d,#ea4aaa_17%,#b34bff_34%,#01feff_51%,#ffd33d_68%,#ea4aaa_85%,#b34bff)] bg-[length:300%_100%] animate-[progress-animation_2s_linear_infinite]" style="width: 70%"></span>
                         </div>
                     </div>
 
-                    <div class="skillsGrid p-8 space-y-2">
+                    <div
+                        class="p-8 space-y-2 mt-12 w-96 h-64 text-left transtion-all duration-300 ease-in-out hover:shadow-[0_10px_20px_0_rgba(0,0,0,0.315),0_6px_6px_0_rgba(0,0,0,0.205)]">
 
                         <h2 class="text-2xl py-5 text-white font-semibold leading-6">Video Editing</h2>
                         <p class="text-lg text-slate-200">Quality video editing using modern softwares</p>
-                        <div class="progress">
-                            <span class="progress-bar" style="width: 60%"></span>
+                        <div style="margin-top: 2rem;" class="w-full max-w-[185px] h-1.5 bg-slate-200 rounded-[3px] overflow-hidden">
+                            <span class="h-full block bg-[linear-gradient(90deg,#ffd33d,#ea4aaa_17%,#b34bff_34%,#01feff_51%,#ffd33d_68%,#ea4aaa_85%,#b34bff)] bg-[length:300%_100%] animate-[progress-animation_2s_linear_infinite]" style="width: 60%"></span>
                         </div>
                     </div>
 
-                    <div class="skillsGrid p-8 space-y-2">
+                    <div
+                        class="p-8 space-y-2 mt-12 w-96 h-56 text-left transtion-all duration-300 ease-in-out hover:shadow-[0_10px_20px_0_rgba(0,0,0,0.315),0_6px_6px_0_rgba(0,0,0,0.205)]">
 
                         <h2 class="text-2xl py-5 text-white font-semibold leading-6">Database language</h2>
                         <p class="text-lg text-slate-200">PL-SQL</p>
-                        <div class="progress">
-                            <span class="progress-bar" style="width: 70%"></span>
+                        <div style="margin-top: 2rem;" class="w-full max-w-[185px] h-1.5 bg-slate-200 rounded-[3px] overflow-hidden">
+                            <span class="h-full block bg-[linear-gradient(90deg,#ffd33d,#ea4aaa_17%,#b34bff_34%,#01feff_51%,#ffd33d_68%,#ea4aaa_85%,#b34bff)] bg-[length:300%_100%] animate-[progress-animation_2s_linear_infinite]" style="width: 70%"></span>
                         </div>
                     </div>
-
                 </div>
 
             </div>
 
-            <p class="text-slate-300 footer mt-24">Made with <span class="text-blue-600">❤</span> by <span class="text-blue-600">Milind Goel</span> </p>
+            <p class="text-slate-300 footer mt-24">Made with <span class="text-red-600">❤</span> by <span
+                    class="text-blue-600">Milind Goel</span> </p>
         </div>
     </div>
 
@@ -145,6 +154,11 @@
     <script src="snowflakes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
     <script src="kursor.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!-- load gsap animation library (minified version) -->
+    <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+    <script src="barba.js"></script>
 </body>
 
 </html>
