@@ -513,9 +513,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-24 {
   height: 6rem;
 }
-.h-6 {
-  height: 1.5rem;
-}
 .h-40 {
   height: 10rem;
 }
@@ -539,9 +536,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .min-h-screen {
   min-height: 100vh;
-}
-.w-6 {
-  width: 1.5rem;
 }
 .w-96 {
   width: 24rem;
@@ -810,7 +804,7 @@ html,body {
     overflow-x: hidden;
 }
 body {
-    font-family: Raisonne;
+    font-family: 'Raisonne', 'Open Sans', sans-serif;
     scroll-behavior: smooth;
     overflow-y: hidden;
     background: var(--background);
