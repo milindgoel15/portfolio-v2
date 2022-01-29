@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
     font-family: 'Raisonne';
     font-style: normal;
@@ -11,18 +15,14 @@
     --hover-accent-color: #1361b9;
 }
 
-// ========== INDEX PAGE ================
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-// ============= CUSTOM SCROLL BAR ==============
-
 ::-webkit-scrollbar {
-    width: 16px; // To make hidden scrollbars, just set wdith to 0px.
+    width: 16px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -39,14 +39,10 @@
     }
 }
 
-// ====== FIREFOX SCROLLBAR ======
 html {
     scrollbar-width: thin;
     scrollbar-color: var(--accent-color) var(--background);
 }
-// ====== FIREFOX SCROLLBAR ======
-
-// ============= CUSTOM SCROLL BAR ==============
 
 html,body {
     margin: 0;

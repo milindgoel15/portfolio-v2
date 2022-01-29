@@ -1,0 +1,31 @@
+{
+  "name": "milindgoel15.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss ./styles/main.scss -o ./styles/tailwindoutput.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milindgoel15/milindgoel15.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milindgoel15/milindgoel15.github.io/issues"
+  },
+  "homepage": "https://github.com/milindgoel15/milindgoel15.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.0.2",
+    "postcss-scss": "^4.0.3",
+    "tailwindcss": "^3.0.18"
+  },
+  "dependencies": {
+    "postcss-nesting": "^10.1.2"
+  }
+}
