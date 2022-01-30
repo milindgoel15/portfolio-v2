@@ -7,7 +7,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(../fonts/raisonne.woff) format('woff');
+    src: url(../fonts/raisonne.woff) format('woff'), url(../fonts/raisonne.woff2) format('woff2');
 }
 
 :root {
@@ -22,6 +22,7 @@
     box-sizing: border-box;
 }
 
+/* custom scrollbar */
 ::-webkit-scrollbar {
     width: 16px;
 }
@@ -44,6 +45,7 @@ html {
     scrollbar-width: thin;
     scrollbar-color: var(--accent-color) var(--background);
 }
+/* custom scrollbar */
 
 html,body {
     margin: 0;
@@ -52,7 +54,7 @@ html,body {
 }
 
 body {
-    font-family: 'Raisonne', 'Open Sans', sans-serif;
+    font-family: 'Raisonne', Ubuntu, 'Open Sans', sans-serif;
     scroll-behavior: smooth;
     overflow-y: hidden;
     background: var(--background);
@@ -64,6 +66,7 @@ a {
     text-decoration: none;
 }
 
+/* loader */
 .loading-screen {
     position: relative;
     padding-left: 0;
@@ -84,6 +87,7 @@ a {
     z-index: 10;
     pointer-events: none;
 }
+/* loader */
 
 @keyframes progress-animation {
     0% {
