@@ -97,3 +97,11 @@ a {
         background-position: 0;
     }
 }
+.logoHover {
+    transition: all .2s ease;
+    fill: aliceblue;
+
+    &:hover {
+        fill: #0e73e6;
+    }
+}

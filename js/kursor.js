@@ -1,5 +1,5 @@
 var kursor = new kursor({
-  type: 1,
+  type: 4,
   removeDefaultCursor: true,
   color: "#FFFFFF"
 });

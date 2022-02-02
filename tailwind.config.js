@@ -1,10 +1,14 @@
 module.exports = {
   mode: 'jit',
   content: [
-    "./*.html"
+    "./*.{html,js}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      transitionDuration: {
+        '350': '350ms',
+      }
+    },
   },
   plugins: [],
 }
