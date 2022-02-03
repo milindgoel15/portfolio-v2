@@ -576,6 +576,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-animation: progress-animation 2s linear infinite;
           animation: progress-animation 2s linear infinite;
 }
+.cursor-none {
+  cursor: none;
+}
 .grid-rows-6 {
   grid-template-rows: repeat(6, minmax(0, 1fr));
 }
@@ -821,6 +824,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    cursor: none;
 }
 /* custom scrollbar */
 ::-webkit-scrollbar {
@@ -903,6 +907,34 @@ a {
 .logoHover:hover {
         fill: #0e73e6;
     }
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+.cursor-dot-outline {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
 .hover\:-top-1:hover {
   top: -0.25rem;
 }
@@ -927,10 +959,6 @@ a {
   --tw-shadow: 0 10px 20px 0 rgba(0,0,0,0.315),0 6px 6px 0 rgba(0,0,0,0.205);
   --tw-shadow-colored: 0 10px 20px 0 var(--tw-shadow-color), 0 6px 6px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.focus\:text-blue-600:focus {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 .focus\:outline-none:focus {
   outline: 2px solid transparent;

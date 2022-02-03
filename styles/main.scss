@@ -20,6 +20,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    cursor: none;
 }
 
 /* custom scrollbar */
@@ -104,4 +105,33 @@ a {
     &:hover {
         fill: #0e73e6;
     }
+}
+
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+.cursor-dot-outline {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
 }
