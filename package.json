@@ -10,12 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/milindgoel15/milindgoel15.github.io.git"
   },
-  "keywords": ["Milind Goel, Web Developer, MilindGoel15, milindgoel15.github.io"],
+  "keywords": [
+    "Milind Goel, Web Developer, MilindGoel15, milindgoel15.github.io"
+  ],
   "author": {
-		"name": "Milind Goel",
-		"email": "milindgoel15@gmail.com",
-		"url": "https://github.com/milindgoel15"
-	},
+    "name": "Milind Goel",
+    "email": "milindgoel15@gmail.com",
+    "url": "https://github.com/milindgoel15"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/milindgoel15/milindgoel15.github.io/issues"
