@@ -38,7 +38,7 @@ var cursor = {
         var self = this;
 
         // Anchor hovering
-        document.querySelectorAll('a, button').forEach(function (el) {
+        document.querySelectorAll('a, .mainContent').forEach(function (el) {
             el.addEventListener('mouseover', function () {
                 self.cursorEnlarged = true;
                 self.toggleCursorSize();
@@ -124,4 +124,8 @@ var cursor = {
     }
 }
 
-cursor.init();
+if (window.innerWidth <= 1024) {
+    document.getElementsByTagName('BODY')[0].style.cursor = 'default'
+  } else {
+    cursor.init();
+  }
