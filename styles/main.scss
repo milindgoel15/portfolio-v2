@@ -20,8 +20,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    cursor: none;
+    scroll-behavior: smooth;
 }
+html * {cursor:none}
 
 /* custom scrollbar */
 ::-webkit-scrollbar {
