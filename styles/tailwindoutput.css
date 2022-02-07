@@ -1013,6 +1013,11 @@ a {
     margin-right: 0px;
   }
 
+  .md\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .md\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -1108,6 +1113,26 @@ a {
   }
 }
 @media (min-width: 1024px) {
+
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lg\:mx-80 {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+
+  .lg\:mx-\[30rem\] {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
+
+  .lg\:mx-110 {
+    margin-left: 30rem;
+    margin-right: 30rem;
+  }
 
   .lg\:ml-20 {
     margin-left: 5rem;

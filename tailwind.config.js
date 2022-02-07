@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       transitionDuration: {
         '350': '350ms',
+      },
+      margin: {
+        '110': '30rem',
       }
     },
   },
