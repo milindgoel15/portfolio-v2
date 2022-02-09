@@ -17,6 +17,7 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="./styles/tailwindoutput.css">
+    <script defer src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js"></script>
 
     <!-- favicons -->
     <link rel="icon" type="image/png" sizes="512x512" href="favicons/android-chrome-512x512.png">
@@ -28,13 +29,13 @@
 
 </head>
 
-<body data-barba="wrapper">
+<body data-barba="wrapper" x-data>
     <div class="load-container">
         <div class="loading-screen"></div>
     </div>
 
     <div class="container h-min sm:ml-8 md:ml-0">
-        <nav class=" max-w-7xl mx-auto px-8 md:flex md:items-center md:justify-between">
+        <nav class=" max-w-7xl mx-auto px-8 md:flex md:items-center md:justify-between" x-data="{ navBar: false }">
             <div class="flex justify-between items-center h-24">
                 <a href="https://milindgoel15.github.io">
                     <svg height="40px" width="40px" class="logoHover" xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +49,7 @@
                     </svg>
                 </a>
 
-                <button class="md:hidden text-white focus:outline-none" onclick="Menu(this)">
+                <button class="md:hidden text-white focus:outline-none" @click="navBar = !navBar">
                     <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
@@ -58,7 +59,8 @@
             </div>
 
             <ul
-                class="md:flex md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto bg-[#14161a] md:py-0 space-x-4 md:pl-0 pl-3 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-350">
+                class="md:flex md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto bg-[#14161a] md:py-0 space-x-4 md:pl-0 pl-3 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-350"
+                :class="{'top-[95px]': navBar, 'opacity-0': !navBar }">
 
                 <li class="mx-4 my-6 md:my-0 md:mx-0">
                     <a href="works"
@@ -248,19 +250,8 @@
     <div class="cursor-dot-outline"></div>
     <div class="cursor-dot"></div>
 
-    <script>
-        function Menu(e) {
-            let list = document.querySelector('ul');
-            e.name === 'menu' ? (e.name = "close",
-                list.classList.add('top-[95px]'),
-                list.classList.add('opacity-100')) : (e.name = "menu",
-                    list.classList.remove('top-[95px]'),
-                    list.classList.remove('opacity-100'))
-        }
-    </script>
     <script src="./js/snowflakes.js"></script>
     <script src="./js/kursor.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="./js/barba.js"></script>
