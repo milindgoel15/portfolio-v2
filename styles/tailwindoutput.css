@@ -1306,6 +1306,11 @@ a {
 }
 @media (min-width: 1536px) {
 
+  .\32xl\:mx-128 {
+    margin-left: 40rem;
+    margin-right: 40rem;
+  }
+
   .\32xl\:mx-80 {
     margin-left: 20rem;
     margin-right: 20rem;
@@ -1314,10 +1319,5 @@ a {
   .\32xl\:mx-110 {
     margin-left: 30rem;
     margin-right: 30rem;
-  }
-
-  .\32xl\:mx-128 {
-    margin-left: 40rem;
-    margin-right: 40rem;
   }
 }
