@@ -10,6 +10,7 @@ module.exports = {
       },
       margin: {
         '110': '30rem',
+        '128': '40rem',
       }
     },
   },

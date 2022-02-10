@@ -1,10 +1,11 @@
 {
   "name": "milindgoel15.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Personal portfolio built with TailwindCSS, AlpineJS & GSAP",
+  "main": "./dist/bundle.js",
   "scripts": {
-    "build": "postcss ./styles/main.scss -o ./styles/tailwindoutput.css --watch"
+    "build": "postcss ./styles/main.scss -o ./styles/tailwindoutput.css --watch",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -24,12 +25,20 @@
   },
   "homepage": "https://github.com/milindgoel15/milindgoel15.github.io#readme",
   "dependencies": {
+    "@alpinejs/intersect": "^3.8.1",
+    "@barba/core": "^2.9.7",
+    "alpinejs": "^3.8.1",
     "autoprefixer": "^10.4.2",
+    "gsap": "^3.9.1",
     "postcss": "^8.4.5",
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.0.2",
     "postcss-nesting": "^10.1.2",
     "postcss-scss": "^4.0.3",
     "tailwindcss": "^3.0.18"
+  },
+  "devDependencies": {
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
   }
 }

@@ -1,3 +1,6 @@
+import barba from '@barba/core';
+import gsap from 'gsap';
+
 function delay(n) {
     n = n || 2000;
     return new Promise((done) => {
@@ -31,29 +34,26 @@ function contentAnimation() {
     tl.from(".animate-this", { duration: 1, y: 30, opacity: 0, stagger: 0.4, delay: 0.2 });
 }
 
-$(function () {
-    barba.init({
-        sync: true,
+barba.init({
+    sync: true,
 
-        transitions: [
-            {
-                async leave(data) {
-                    const done = this.async();
+    transitions: [
+        {
+            async leave(data) {
+                const done = this.async();
 
-                    pageTransition();
-                    await delay(1000);
-                    done();
-                },
-
-                async enter(data) {
-                    contentAnimation();
-                },
-
-                async once(data) {
-                    contentAnimation();
-                },
+                pageTransition();
+                await delay(1000);
+                done();
             },
-        ],
-    });
-});
 
+            async enter(data) {
+                contentAnimation();
+            },
+
+            async once(data) {
+                contentAnimation();
+            },
+        },
+    ],
+});

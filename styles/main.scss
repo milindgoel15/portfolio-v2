@@ -108,6 +108,22 @@ a {
     }
 }
 
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(35%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media screen and (max-width: 768px) {   
+    .fadeInUp {
+        animation: fadeInUp 1s;
+    }
+}
+
 .cursor-dot {
     width: 8px;
     height: 8px;

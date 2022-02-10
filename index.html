@@ -17,7 +17,6 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="./styles/tailwindoutput.css">
-    <script defer src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js"></script>
 
     <!-- favicons -->
     <link rel="icon" type="image/png" sizes="512x512" href="favicons/android-chrome-512x512.png">
@@ -34,7 +33,7 @@
         <div class="loading-screen"></div>
     </div>
 
-    <div class="container h-min">
+    <div class="h-min">
         <!-- navbar goes here -->
         <nav class="max-w-7xl mx-auto px-8 md:mx-8 lg:mx-auto md:flex md:items-center md:justify-between" x-data="{ navBar: false }">
             <div class="flex justify-between items-center h-24">
@@ -82,10 +81,10 @@
 
         <!-- content goes here -->
         <div class="py-32 text-center animate-this cursor-none" data-barba="container" data-barba-namespace="home">
-            <h2 class="font-extrabold text-6xl py-5 lg:mx-80 lg:text-8xl text-white md:text-6xl mainContent">
+            <h2 class="font-extrabold text-6xl py-5 xl:mx-40 2xl:mx-80 lg:text-8xl text-white md:text-6xl mainContent">
                 Hi! I'm Milind Goel
             </h2>
-            <p class="text-xl text-white py-8 px-3 lg:mx-110 md:text-2xl mainContent">
+            <p class="text-xl text-white py-8 px-3 xl:mx-80 2xl:mx-110 md:text-2xl mainContent">
                 a Web Developer, UI/UX Designer based in India
             </p>
 
@@ -105,13 +104,8 @@
 
     <div class="cursor-dot-outline"></div>
     <div class="cursor-dot"></div>
+    <script src="./dist/bundle.js"></script>
 
-    <script src="./js/snowflakes.js"></script>
-    <script src="./js/kursor.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="./js/barba.js"></script>
 </body>
 
 </html>

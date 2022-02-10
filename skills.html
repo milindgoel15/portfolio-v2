@@ -18,7 +18,6 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="./styles/tailwindoutput.css">
-    <script defer src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js"></script>
 
     <!-- favicons -->
     <link rel="icon" type="image/png" sizes="512x512" href="favicons/android-chrome-512x512.png">
@@ -35,7 +34,7 @@
         <div class="loading-screen"></div>
     </div>
 
-    <div class="container h-min sm:ml-8 md:ml-0">
+    <div class="h-min">
         <!-- navbar goes here -->
         <nav class=" max-w-7xl mx-auto px-8 md:flex md:items-center md:justify-between" x-data="{ navBar: false }">
             <div class="flex justify-between items-center h-24">
@@ -85,13 +84,13 @@
 
         <!-- content goes here -->
         <div class="py-32 text-center cursor-none" data-barba="container" data-barba-namespace="skills">
-            <h2 class="font-extrabold text-4xl py-1 text-white mainContent">Skills</h2>
+            <h2 class="font-extrabold text-4xl py-1 xl:mx-110 2xl:mx-128 text-white mainContent">Skills</h2>
 
-            <div class="flex justify-center min-h-screen">
+            <div class="flex justify-center">
 
-                <div class="grid grid-rows-5 gap-2 lg:grid-col-3 lg:grid-rows-2 lg:grid-flow-col lg:gap-5 lg:ml-20">
+                <div class="grid grid-rows-5 gap-2 sm:grid-cols-2 sm:grid-rows-3 sm:mx-14 sm:mt-12 lg:grid-col-3 lg:grid-rows-2 lg:grid-flow-col lg:gap-5 lg:ml-20">
 
-                    <div class="p-8 ml-5 md:ml-0 space-y-2 mt-12 w-96 h-56 text-left transtion-all duration-300 ease-in-out hover:shadow-[0_10px_20px_0_rgba(0,0,0,0.315),0_6px_6px_0_rgba(0,0,0,0.205)] mainContent">
+                    <div class="p-8 ml-5 md:ml-0 space-y-2 mt-12 w-96 h-56 sm:mt-0 text-left transtion-all duration-300 ease-in-out hover:shadow-[0_10px_20px_0_rgba(0,0,0,0.315),0_6px_6px_0_rgba(0,0,0,0.205)] mainContent sm:order-1 lg:order-1" x-intersect="$el.classList.add('fadeInUp')">
 
                         <h2 class="text-2xl py-5 text-white font-semibold leading-6">Web Designing</h2>
                         <p class="text-lg text-slate-200">Prototyping & UI/UX Designing</p>
@@ -103,17 +102,17 @@
 
 
                     <div
-                        class="p-8 ml-5 md:ml-0 space-y-2 mt-12 w-96 h-64 text-left transtion-all duration-300 ease-in-out hover:shadow-[0_10px_20px_0_rgba(0,0,0,0.315),0_6px_6px_0_rgba(0,0,0,0.205)] mainContent">
+                        class="p-8 ml-5 md:ml-0 space-y-2 mt-12 w-96 h-64 sm:mt-0 text-left transtion-all duration-300 ease-in-out hover:shadow-[0_10px_20px_0_rgba(0,0,0,0.315),0_6px_6px_0_rgba(0,0,0,0.205)] mainContent sm:order-4 lg:order-2" x-intersect="$el.classList.add('fadeInUp')">
 
                         <h2 class="text-2xl py-5 text-white font-semibold leading-6">Object Oriented Programming</h2>
                         <p class="text-lg text-slate-200">C/C++</p>
                         <div style="margin-top: 2rem;" class="w-full max-w-[185px] h-1.5 bg-slate-200 rounded-[3px] overflow-hidden">
-                            <span class="h-full block bg-[linear-gradient(90deg,#ffd33d,#ea4aaa_17%,#b34bff_34%,#01feff_51%,#ffd33d_68%,#ea4aaa_85%,#b34bff)] bg-[length:300%_100%] animate-[progress-animation_2s_linear_infinite]" style="width: 25%"></span>
+                            <span class="h-full block bg-[linear-gradient(90deg,#ffd33d,#ea4aaa_17%,#b34bff_34%,#01feff_51%,#ffd33d_68%,#ea4aaa_85%,#b34bff)] bg-[length:300%_100%] animate-[progress-animation_2s_linear_infinite]" style="width: 30%"></span>
                         </div>
                     </div>
 
                     <div
-                        class="p-8 ml-5 md:ml-0 space-y-2 mt-12 w-96 h-56 text-left transtion-all duration-300 ease-in-out hover:shadow-[0_10px_20px_0_rgba(0,0,0,0.315),0_6px_6px_0_rgba(0,0,0,0.205)] mainContent">
+                        class="p-8 ml-5 md:ml-0 space-y-2 mt-12 w-96 h-56 sm:mt-0 text-left transtion-all duration-300 ease-in-out hover:shadow-[0_10px_20px_0_rgba(0,0,0,0.315),0_6px_6px_0_rgba(0,0,0,0.205)] mainContent sm:order-2 lg:order-3" x-intersect="$el.classList.add('fadeInUp')">
 
                         <h2 class="text-2xl py-5 text-white font-semibold leading-6">Web Development</h2>
                         <p class="text-lg text-slate-200">HTML/CSS/JS</p>
@@ -123,19 +122,19 @@
                     </div>
 
                     <div
-                        class="p-8 ml-5 md:ml-0 space-y-2 mt-12 w-96 h-64 text-left transtion-all duration-300 ease-in-out hover:shadow-[0_10px_20px_0_rgba(0,0,0,0.315),0_6px_6px_0_rgba(0,0,0,0.205)] mainContent">
+                        class="p-8 ml-5 md:ml-0 space-y-2 mt-12 w-96 h-64 sm:mt-0 text-left transtion-all duration-300 ease-in-out hover:shadow-[0_10px_20px_0_rgba(0,0,0,0.315),0_6px_6px_0_rgba(0,0,0,0.205)] mainContent sm:order-3 lg:order-4" x-intersect="$el.classList.add('fadeInUp')">
 
-                        <h2 class="text-2xl py-5 text-white font-semibold leading-6">Video Editing</h2>
-                        <p class="text-lg text-slate-200">Quality video editing using modern softwares</p>
+                        <h2 class="text-2xl py-5 text-white font-semibold leading-6">Object Oriented Programming</h2>
+                        <p class="text-lg text-slate-200">Java</p>
                         <div style="margin-top: 2rem;" class="w-full max-w-[185px] h-1.5 bg-slate-200 rounded-[3px] overflow-hidden">
-                            <span class="h-full block bg-[linear-gradient(90deg,#ffd33d,#ea4aaa_17%,#b34bff_34%,#01feff_51%,#ffd33d_68%,#ea4aaa_85%,#b34bff)] bg-[length:300%_100%] animate-[progress-animation_2s_linear_infinite]" style="width: 60%"></span>
+                            <span class="h-full block bg-[linear-gradient(90deg,#ffd33d,#ea4aaa_17%,#b34bff_34%,#01feff_51%,#ffd33d_68%,#ea4aaa_85%,#b34bff)] bg-[length:300%_100%] animate-[progress-animation_2s_linear_infinite]" style="width: 10%"></span>
                         </div>
                     </div>
 
                     <div
-                        class="p-8 ml-5 md:ml-0 space-y-2 mt-12 w-96 h-56 text-left transtion-all duration-300 ease-in-out hover:shadow-[0_10px_20px_0_rgba(0,0,0,0.315),0_6px_6px_0_rgba(0,0,0,0.205)] mainContent">
+                        class="p-8 ml-5 md:ml-0 space-y-2 mt-12 w-96 h-56 sm:mt-0 text-left transtion-all duration-300 ease-in-out hover:shadow-[0_10px_20px_0_rgba(0,0,0,0.315),0_6px_6px_0_rgba(0,0,0,0.205)] mainContent sm:order-5 lg:order-5" x-intersect="$el.classList.add('fadeInUp')">
 
-                        <h2 class="text-2xl py-5 text-white font-semibold leading-6">Database language</h2>
+                        <h2 class="text-2xl py-5 text-white font-semibold leading-6">Procedural programming</h2>
                         <p class="text-lg text-slate-200">PL-SQL</p>
                         <div style="margin-top: 2rem;" class="w-full max-w-[185px] h-1.5 bg-slate-200 rounded-[3px] overflow-hidden">
                             <span class="h-full block bg-[linear-gradient(90deg,#ffd33d,#ea4aaa_17%,#b34bff_34%,#01feff_51%,#ffd33d_68%,#ea4aaa_85%,#b34bff)] bg-[length:300%_100%] animate-[progress-animation_2s_linear_infinite]" style="width: 70%"></span>
@@ -152,13 +151,8 @@
 
     <div class="cursor-dot-outline"></div>
     <div class="cursor-dot"></div>
+    <script src="./dist/bundle.js"></script>
 
-    <script src="./js/snowflakes.js"></script>
-    <script src="./js/kursor.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="./js/barba.js"></script>
 </body>
 
 </html>

@@ -17,7 +17,6 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="./styles/tailwindoutput.css">
-    <script defer src="https://unpkg.com/alpinejs@3.8.1/dist/cdn.min.js"></script>
 
     <!-- favicons -->
     <link rel="icon" type="image/png" sizes="512x512" href="favicons/android-chrome-512x512.png">
@@ -34,7 +33,7 @@
         <div class="loading-screen"></div>
     </div>
 
-    <div class="container h-min sm:ml-8 md:ml-0">
+    <div class="h-min">
         <!-- navbar goes here -->
         <nav class=" max-w-7xl mx-auto px-8 md:flex md:items-center md:justify-between" x-data="{ navBar: false }">
             <div class="flex justify-between items-center h-24">
@@ -84,19 +83,19 @@
 
         <!-- content goes here -->
         <div class="py-32 text-center animate-this cursor-none" data-barba="container" data-barba-namespace="works">
-            <h2 class="font-extrabold text-2xl py-5 text-white md:text-4xl">Recents Works & Contributions</h2>
+            <h2 class="font-extrabold text-2xl py-5 xl:mx-80 2xl:mx-110 text-white md:text-4xl">Recents Works & Contributions</h2>
 
-            <div class="flex justify-center min-h-screen">
+            <div class="flex justify-center">
 
-                <div class="grid grid-rows-4 gap-2 lg:grid-col-2 lg:grid-rows-2 lg:grid-flow-col lg:gap-5">
+                <div class="grid grid-rows-4 gap-2 sm:mt-12 sm:grid-cols-2 sm:grid-rows-2 sm:gap-6 lg:grid-col-2 lg:grid-flow-col lg:gap-8">
                     <a href="http://abhishekgoelandassociates.com" target="blank">
 
                         <div
-                            class="py-8 px-6 sm:h-60 sm:px-10 md:px-8 h-[17rem] bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2 mt-5 ml-4 md:h-64 w-11/12 sm:ml-0 sm:mt-20 sm:w-[32rem] text-left relative transtion-all duration-300 ease-in-out top-0 hover:-top-1 hover:shadow-xl mainContent">
+                            class="py-8 px-6 sm:h-72 sm:px-10 md:px-8 h-[16rem] bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2 mt-5 ml-4 w-11/12 sm:ml-0 sm:w-80 sm:mt-0 md:h-72 lg:h-64 lg:w-[32rem] text-left relative transtion-all duration-300 ease-in-out top-0 hover:-top-1 hover:shadow-xl mainContent" x-intersect="$el.classList.add('fadeInUp')">
 
                             <h2 class="text-2xl py-5 text-white font-semibold leading-6">Abhishek Goel & Associates</h2>
                             <p class="text-lg text-slate-200">Website for Chartered Accountant firm</p>
-                            <p class="text-lg text-slate-200">Written with HTML5, SCSS and JS</p>
+                            <p class="text-lg text-slate-200 py-1 lg:py-2 w-11/12">Written with HTML5, SCSS and JS</p>
 
                         </div>
                     </a>
@@ -104,10 +103,10 @@
                     <a href="https://github.com/RetroMusicPlayer" target="blank">
 
                         <div
-                            class="py-8 px-6 sm:h-60 sm:px-10 md:px-8 h-[17rem] bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2 mt-5 ml-4 md:h-64 w-11/12 sm:ml-0 sm:mt-20 sm:w-[32rem] text-left relative transtion-all duration-300 ease-in-out top-0 hover:-top-1 hover:shadow-xl mainContent">
+                            class="py-8 px-6 sm:h-72 sm:px-10 md:px-8 h-[17rem] bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2 mt-5 ml-4 w-11/12 sm:ml-0 sm:w-80 sm:mt-0 md:h-72 lg:h-64 lg:w-[32rem] text-left relative transtion-all duration-300 ease-in-out top-0 hover:-top-1 hover:shadow-xl mainContent" x-intersect="$el.classList.add('fadeInUp')">
 
                             <h2 class="text-2xl py-5 text-white font-semibold leading-6">Retro Music Player</h2>
-                            <p class="text-lg text-slate-200">Member and contributor of Retro Music Player, a material
+                            <p class="text-lg text-slate-200 py-1">Member and contributor of Retro Music Player, a material
                                 design, offline music player for Android.</p>
                         </div>
 
@@ -115,11 +114,11 @@
 
                     <a href="http://mwsretail.in" target="blank">
                         <div
-                            class="py-8 px-6 sm:h-60 sm:px-10 md:px-8 h-[17rem] bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2 mt-5 ml-4 md:h-64 w-11/12 sm:ml-0 sm:mt-20 sm:w-[32rem] text-left relative transtion-all duration-300 ease-in-out top-0 hover:-top-1 hover:shadow-xl mainContent">
+                            class="py-8 px-6 sm:h-72 sm:px-10 md:px-8 h-[17rem] bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2 mt-5 ml-4 w-11/12 sm:ml-0 sm:w-80 sm:mt-0 md:h-72 lg:h-64 lg:w-[32rem] text-left relative transtion-all duration-300 ease-in-out top-0 hover:-top-1 hover:shadow-xl mainContent" x-intersect="$el.classList.add('fadeInUp')">
 
                             <h2 class="text-2xl py-5 text-white font-semibold leading-6">Milind Webcomm Services</h2>
                             <p class="text-lg text-slate-200">Website for Web Designing and E-Commerce operators</p>
-                            <p class="text-lg text-slate-200">Written with TailwindCSS & AlpineJS</p>
+                            <p class="text-lg text-slate-200 py-1 lg:py-2 w-11/12">Written with TailwindCSS & AlpineJS</p>
 
                         </div>
 
@@ -130,11 +129,11 @@
                     <a href="https://github.com/milindgoel15/milindgoel15.github.io" target="blank">
 
                         <div
-                            class="py-8 px-6 sm:h-60 sm:px-10 md:px-8 h-[17rem] bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2 mt-5 ml-4 md:h-64 w-11/12 sm:ml-0 sm:mt-20 sm:w-[32rem] text-left relative transtion-all duration-300 ease-in-out top-0 hover:-top-1 hover:shadow-xl mainContent">
+                            class="py-8 px-6 sm:h-72 sm:px-10 md:px-8 h-[17rem] bg-blue-600 hover:bg-blue-700 border-transparent rounded-md shadow-md space-y-2 mt-5 ml-4 w-11/12 sm:ml-0 sm:w-80 sm:mt-0 md:h-72 lg:h-64 lg:w-[32rem] text-left relative transtion-all duration-300 ease-in-out top-0 hover:-top-1 hover:shadow-xl mainContent" x-intersect="$el.classList.add('fadeInUp')">
 
                             <h2 class="text-2xl py-5 text-white font-semibold leading-6">Personal Portfolio</h2>
                             <p class="text-lg text-slate-200">Designed personal Portfolio website for myself</p>
-                            <p class="text-lg text-slate-200">Written with HTML5, Tailwind with SCSS and JS</p>
+                            <p class="text-lg text-slate-200 py-1 lg:py-2 w-11/12">Written with TailwindCSS, AlpineJS, BarbaJS & GSAP</p>
 
                         </div>
 
@@ -146,7 +145,7 @@
 
             <a href="https://github.com/milindgoel15?tab=repositories">
                 <button
-                    class="py-6 my-20 px-7 text-xl md:py-5 md:px-7 md:my-8 xl:my-20 xl:px-10 xl:py-7 rounded-full bg-white button transition duration-200 ease-in-out text-blue-600 hover:text-white hover:bg-blue-700 mainContent">Other
+                    class="py-6 my-20 px-7 text-xl md:py-5 md:px-7 md:my-24 xl:my-20 xl:px-10 xl:py-7 rounded-full bg-white button transition duration-200 ease-in-out text-blue-600 hover:text-white hover:bg-blue-700 mainContent" x-intersect="$el.classList.add('fadeInUp')">Other
                     Contributions</button>
             </a>
 
@@ -158,13 +157,8 @@
 
     <div class="cursor-dot-outline"></div>
     <div class="cursor-dot"></div>
+    <script src="./dist/bundle.js"></script>
 
-    <script src="./js/snowflakes.js"></script>
-    <script src="./js/kursor.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="./js/barba.js"></script>
 </body>
 
 </html>
