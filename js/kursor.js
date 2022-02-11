@@ -38,7 +38,7 @@ var cursor = {
         var self = this;
 
         // Anchor hovering
-        document.querySelectorAll('a, .mainContent').forEach(function (el) {
+        document.querySelectorAll('a, .cursorHover').forEach(function (el) {
             el.addEventListener('mouseover', function () {
                 self.cursorEnlarged = true;
                 self.toggleCursorSize();
