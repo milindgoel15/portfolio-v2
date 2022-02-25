@@ -548,9 +548,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-full {
   height: 100%;
 }
-.h-64 {
-  height: 16rem;
-}
 .h-\[16rem\] {
   height: 16rem;
 }
@@ -987,26 +984,6 @@ a {
 }
 @media (min-width: 640px) {
 
-  .sm\:order-1 {
-    order: 1;
-  }
-
-  .sm\:order-4 {
-    order: 4;
-  }
-
-  .sm\:order-2 {
-    order: 2;
-  }
-
-  .sm\:order-3 {
-    order: 3;
-  }
-
-  .sm\:order-5 {
-    order: 5;
-  }
-
   .sm\:mx-14 {
     margin-left: 3.5rem;
     margin-right: 3.5rem;
@@ -1178,26 +1155,6 @@ a {
   }
 }
 @media (min-width: 1024px) {
-
-  .lg\:order-1 {
-    order: 1;
-  }
-
-  .lg\:order-2 {
-    order: 2;
-  }
-
-  .lg\:order-3 {
-    order: 3;
-  }
-
-  .lg\:order-4 {
-    order: 4;
-  }
-
-  .lg\:order-5 {
-    order: 5;
-  }
 
   .lg\:mx-auto {
     margin-left: auto;
