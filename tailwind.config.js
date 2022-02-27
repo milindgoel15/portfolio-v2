@@ -1,12 +1,14 @@
 module.exports = {
-  mode: 'jit',
   content: [
     "./*.{html,js}"
   ],
   theme: {
     extend: {
+      colors: {
+        'primary': 'rgb(20 22 26 / 0.9)'
+      },
       transitionDuration: {
-        '350': '350ms',
+        '400': '400ms',
       },
       margin: {
         '110': '30rem',
