@@ -546,6 +546,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .grid {
   display: grid;
 }
+.hidden {
+  display: none;
+}
 .h-min {
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -1187,6 +1190,10 @@ a {
 
   .lg\:ml-20 {
     margin-left: 5rem;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:h-64 {
