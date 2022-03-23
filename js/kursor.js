@@ -126,6 +126,6 @@ var cursor = {
 
 if (window.innerWidth <= 1024) {
     document.getElementsByTagName('BODY')[0].style.cursor = 'default'
-  } else {
+} else {
     cursor.init();
-  }
+}
