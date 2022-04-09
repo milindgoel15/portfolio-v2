@@ -10,7 +10,7 @@
 
 ## For Forking this repo (Must Read!)
 
-You are free to fork this repo but Please don't forget to give me proper credit by linking your site back to back profile/site.
+You are free to fork this repo but Please don't forget to give me proper credit by linking your site back to my profile/site.
 
 Credit section inside website should be linked to 
 
