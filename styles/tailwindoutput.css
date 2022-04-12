@@ -528,11 +528,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-12 {
   margin-top: 3rem;
 }
-.ml-162 {
-  margin-left: 62rem;
-}
 .ml-174 {
   margin-left: 68rem;
+}
+.ml-162 {
+  margin-left: 62rem;
 }
 .ml-24 {
   margin-left: 6rem;
@@ -1054,6 +1054,14 @@ a {
 
   .sm\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+
+  .sm\:grid-rows-5 {
+    grid-template-rows: repeat(5, minmax(0, 1fr));
   }
 
   .sm\:gap-8 {
